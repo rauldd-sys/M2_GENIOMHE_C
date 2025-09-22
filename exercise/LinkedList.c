@@ -44,6 +44,7 @@ void freeLinkedList(LinkedList* list) {
     }
     free(list);
 }
+
 int main() {
     LinkedList* list = createLinkedList();
     append(list, 10);
