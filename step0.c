@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 typedef struct node Node;
+
 struct node{
 	int data;
 	Node* next;
@@ -21,4 +22,8 @@ int main(){
 	Node* some_node_ptr = &some_node;
 	some_node.data = 78578678;
 	//some_node.next = (some_address)
+
+	free(first_node);
+	free(second_node);
+	free(third_node);
 }
